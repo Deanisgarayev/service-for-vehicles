@@ -12,7 +12,6 @@ public class Main {
         ServiceStation serviceStation = new ServiceStation();
         for (Vehicle vehicle : vehicles) {
             serviceStation.check(vehicle);
-
         }
     }
 }
