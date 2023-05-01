@@ -7,6 +7,11 @@ public class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+
+    }
+
     public String getModelName() {
         return modelName;
     }
@@ -25,6 +30,6 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return " modelName " + modelName + ", wheelsCount " + wheelsCount;
+        return " Vehicle " + modelName + ", wheelsCount " + wheelsCount;
     }
 }
