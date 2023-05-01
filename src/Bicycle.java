@@ -3,3 +3,4 @@ public class Bicycle extends Vehicle {
         super(modelName, wheelsCount);
     }
 }
+

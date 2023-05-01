@@ -1,10 +1,17 @@
-public class Vehicle {
+public abstract class Vehicle implements Maintainable {
     private String modelName;
     private int wheelsCount;
 
     public Vehicle(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
+    }
+    @Override
+    public void service() {
+        System.out.println("Проверяем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
     }
 
     public void updateTyre() {
@@ -28,8 +35,5 @@ public class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
-    @Override
-    public String toString() {
-        return " Vehicle " + modelName + ", wheelsCount " + wheelsCount;
     }
-}
+

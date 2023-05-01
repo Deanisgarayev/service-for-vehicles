@@ -11,7 +11,8 @@ public class Main {
         };
         ServiceStation serviceStation = new ServiceStation();
         for (Vehicle vehicle : vehicles) {
-            System.out.println(vehicle);
+            serviceStation.check(vehicle);
+
         }
     }
 }
